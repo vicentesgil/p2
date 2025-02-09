@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+
+    /* Permitir que el contenido empuje el footer abajo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima del viewport */
 }
 
 header {
@@ -29,11 +34,15 @@ nav ul li a {
 
 section {
     padding: 20px;
+    flex: 1; /* Expande el contenido para empujar el footer hacia abajo */
 }
 
+/* Asegurar que el footer quede abajo */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 10px;
 }

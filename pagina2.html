@@ -1,37 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos y fotos</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Productos y fotos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pagina1.html">Página 1</a></li>
-                <li><a href="pagina2.html">Página 2</a></li>
-                <li><a href="pagina3.html">Página 3</a></li>
-            </ul>
-        </nav>
+      <h1>Lista de Productos</h1>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pagina1.html">Página 1</a></li>
+          <li><a href="pagina2.html">Página 2</a></li>
+          <li><a href="pagina3.html">Página 3</a></li>
+        </ul>
+      </nav>
     </header>
+    <div style="display: flex; justify-content: flex-end; align-items: center; margin: 10px;">
+      <div style="display: flex; border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+        <input type="text" id="buscador" placeholder="Buscar producto..." style="padding: 5px; width: 200px; border: none; outline: none;">
+        <button id="boton-buscar" style="padding: 5px 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">
+          Buscar
+        </button>
+      </div>
+    </div>
+    <main>
+      <section id="productos-container">
+        <!-- Aquí se cargarán los productos dinámicamente -->
+      </section>
 
-    <section>
-        <figure>
-        <h2>Portatil</h2>
-        <img src="imagenes/ordenador.jpg" alt="Descripción de la imagen" width="300" height="200">
-    </figure>
-    <figure>
-        <h2>Tarjeta grafica</h2>
-        <img src="imagenes/tarjeta_grafica.jpg" alt="Descripción de la imagen" width="300" height="200">
-    </figure>
-    </section>
+      <div id="paginacion">
+        <!-- Aquí irán los botones de paginación -->
+      </div>
+
+      <section id="detalles-producto" style="display: none;">
+        <!-- Aquí se mostrarán los detalles del producto seleccionado -->
+      </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 - Mi Página Web</p>
+      <p>&copy; 2025 - Mi Página Web</p>
     </footer>
-</body>
+
+    <script src="script1.js"></script> <!-- Enlaza el script que maneja la API -->
+  </body>
 </html>

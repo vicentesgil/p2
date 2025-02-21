@@ -1,54 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stock</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Stock</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pagina1.html">Página 1</a></li>
-                <li><a href="pagina2.html">Página 2</a></li>
-                <li><a href="pagina3.html">Página 3</a></li>
-            </ul>
-        </nav>
+      <h1>Stock</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pagina1.html">Página 1</a></li>
+          <li><a href="pagina2.html">Página 2</a></li>
+          <li><a href="pagina3.html">Página 3</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section>
-        <h2>Lista de Productos</h2>
-        <p>Aquí puedes ver una tabla con diferentes productos y sus precios.</p>
+      <h2>Lista de Productos</h2>
+      <p>Aquí puedes ver una tabla con diferentes productos, sus precios y su disponibilidad.</p>
 
-        <table border="1">
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-                <th>Disponibilidad</th>
-            </tr>
-            <tr>
-                <td>Portatil</td>
-                <td>$1000</td>
-                <td>En stock</td>
-            </tr>
-            <tr>
-                <td>Tarjeta Grafica</td>
-                <td>$800</td>
-                <td>En stock</td>
-            </tr>
-            <tr>
-                <td>Auriculares</td>
-                <td>$500</td>
-                <td>Agotado</td>
-            </tr>
-        </table>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-productos">
+          <!-- Los productos se insertarán aquí dinámicamente -->
+        </tbody>
+      </table>
     </section>
 
     <footer>
-        <p>&copy; 2025 - Mi Página Web</p>
+      <p>&copy; 2025 - Mi Página Web</p>
     </footer>
-</body>
+
+    <script src="pagina1.js"></script>
+  </body>
 </html>

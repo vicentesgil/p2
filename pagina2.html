@@ -9,7 +9,6 @@
   <body>
     <header>
       <h1>Lista de Productos</h1>
-      
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -18,15 +17,14 @@
           <li><a href="pagina3.html">Página 3</a></li>
         </ul>
       </nav>
-    </header>
-    <div style="display: flex; justify-content: flex-end; align-items: center; margin: 10px;">
-      <div style="display: flex; border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
-        <input type="text" id="buscador" placeholder="Buscar producto..." style="padding: 5px; width: 200px; border: none; outline: none;">
-        <button id="boton-buscar" style="padding: 5px 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">
-          Buscar
-        </button>
+      <div class="buscador-container">
+        <div class="buscador-box">
+          <input type="text" id="buscador" placeholder="Buscar producto...">
+          <button id="boton-buscar">Buscar</button>
+        </div>
       </div>
-    </div>
+    </header>
+    
     <main>
       <section id="productos-container">
         <!-- Aquí se cargarán los productos dinámicamente -->
@@ -35,11 +33,11 @@
       <div id="paginacion">
         <!-- Aquí irán los botones de paginación -->
       </div>
-
-      <section id="detalles-producto" style="display: none;">
-        <!-- Aquí se mostrarán los detalles del producto seleccionado -->
-      </section>
     </main>
+    
+    <section id="detalles-producto" class="oculto">
+      <!-- Aquí se mostrarán los detalles del producto seleccionado -->
+    </section>
 
     <footer>
       <p>&copy; 2025 - Mi Página Web</p>

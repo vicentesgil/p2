@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                     <p><strong>Categoría:</strong> ${producto.category}</p>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 20px;">
-                <button onclick="window.location.href='pagina2.html'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">⬅ Volver</button>
+            <div class="boton-volver-container">
+                <button onclick="window.location.href='pagina2.html'" class="boton-volver">⬅ Volver</button>
             </div>
         `;
     } catch (error) {

@@ -3,11 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  
-  /* Permitir que el contenido empuje el footer abajo */
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Altura mínima del viewport */
+  min-height: 100vh;
 }
 
 header {
@@ -32,12 +30,44 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
-  padding: 20px;
-  flex: 1; /* Expande el contenido para empujar el footer hacia abajo */
+.buscador-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
 }
 
-/* Asegurar que el footer quede abajo */
+.buscador-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#buscador {
+  padding: 5px;
+  width: 200px;
+  border: none;
+  outline: none;
+}
+
+#boton-buscar {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#boton-buscar:hover {
+  background-color: #0056b3;
+}
+
+section {
+  padding: 20px;
+  flex: 1;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -47,7 +77,6 @@ footer {
   padding: 10px;
 }
 
-/* Estilo para mostrar los productos en filas de 3 */
 #productos-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -78,7 +107,6 @@ footer {
   margin-top: 10px;
 }
 
-/* Estilo para la página de detalles centrada */
 #detalle-producto {
   display: flex;
   flex-direction: column;
@@ -117,7 +145,6 @@ button:hover {
   background: #0056b3;
 }
 
-/* Estilo para los botones de paginación centrados y juntos */
 #paginacion {
   display: flex;
   justify-content: center;
@@ -153,4 +180,41 @@ button:hover {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.boton-volver-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-volver {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boton-volver:hover {
+  background-color: #0056b3;
+}
+
+.boton-shop {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
